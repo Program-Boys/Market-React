@@ -1,5 +1,11 @@
+import Footer from "../../components/Footer";
+
 const Login = () => {
-  return <></>;
+  return (
+    <>
+      <Footer />
+    </>
+  );
 };
 
 export default Login;

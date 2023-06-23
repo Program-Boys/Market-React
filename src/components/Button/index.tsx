@@ -1,12 +1,9 @@
-import React from "react";
-
 interface IButton {
-  children: React.ReactNode;
   text: string;
 }
 
-const Button = ({ children }: IButton) => {
-  return <button>{children}</button>;
+const Button = ({ text }: IButton) => {
+  return <button>{text}</button>;
 };
 
 export default Button;
