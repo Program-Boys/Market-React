@@ -1,11 +1,14 @@
+import Context from "./context/Context";
 import MainRoutes from "./routes/mainRoutes";
 import { GlobalStyle } from "./style/globalStyle";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <MainRoutes />
+      <Context>
+        <GlobalStyle />
+        <MainRoutes />
+      </Context>
     </>
   );
 }
