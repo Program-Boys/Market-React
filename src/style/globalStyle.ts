@@ -5,6 +5,8 @@ export const GlobalStyle = createGlobalStyle`
         --default-background: #0F1330
         
         --green-ultra-dark: #1C2D3E
+
+        --default-white: #FFF
     }
     
     body, html{

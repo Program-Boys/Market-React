@@ -1,7 +1,6 @@
-import { yupResolver } from "@hookform/resolvers/yup";
 import React from "react";
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { registerFormSchema } from "../../validations/form.validations";
+import { FieldValues, SubmitHandler } from "react-hook-form";
+import { FormStyled } from "./style";
 
 interface IForm {
   children: React.ReactNode;
@@ -9,15 +8,7 @@ interface IForm {
 }
 
 const Form = ({ children }: IForm) => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
-    resolver: yupResolver(registerFormSchema),
-  });
-
-  return <form>{children}</form>;
+  return <FormStyled>{children}</FormStyled>;
 };
 
 export default Form;
