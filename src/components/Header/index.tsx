@@ -1,11 +1,11 @@
 import React from "react";
 
 interface IHeader {
-  children: React.ReactNode;
+  talvezTenhaPropFuturamente: string;
 }
 
-const Header = ({ children }: IHeader) => {
-  return <header>{children}</header>;
+const Header = ({ talvezTenhaPropFuturamente }: IHeader) => {
+  return <header> </header>;
 };
 
 export default Header;
