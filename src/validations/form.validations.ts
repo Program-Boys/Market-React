@@ -6,3 +6,8 @@ export const registerFormSchema = yup.object().shape({
   cpf: yup.string().required("Your CPF is required"),
   password: yup.string().required("Your password is required"),
 });
+
+export const loginSchema = yup.object().shape({
+  email: yup.string().email().required("Your email is required"),
+  password: yup.string().required("Your password is required"),
+});
